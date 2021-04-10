@@ -25,16 +25,18 @@
 
 ## intent: provide_nth
 - Month based prices
+- I want monthly prices please
+- Month based prices
 
 ## intent: provide_hour
 - Hour based prices
-
-## intent: provide_month
-- stock prices
+- Hourly prices
+- Hour based stocks
 
 ## intent: provide_info
 - Stock company details
 - I want to know the company details
+- Company info
 
 ## intent: provide_done
 - No, that's it
