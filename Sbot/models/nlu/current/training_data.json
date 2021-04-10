@@ -1,0 +1,173 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "hello there"
+      },
+      {
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "good evening"
+      },
+      {
+        "intent": "greet",
+        "text": "moin"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "greet",
+        "text": "let's go"
+      },
+      {
+        "intent": "greet",
+        "text": "hey dude"
+      },
+      {
+        "intent": "greet",
+        "text": "goodmorning"
+      },
+      {
+        "intent": "greet",
+        "text": "goodevening"
+      },
+      {
+        "intent": "greet",
+        "text": "good afternoon"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "provide_current",
+        "text": "Current stock prices"
+      },
+      {
+        "intent": "provide_name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "ibm",
+            "entity": "stock"
+          }
+        ],
+        "text": "ibm"
+      },
+      {
+        "intent": "provide_name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "microsoft",
+            "entity": "stock"
+          }
+        ],
+        "text": "Microsoft"
+      },
+      {
+        "intent": "provide_name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "shop",
+            "entity": "stock"
+          }
+        ],
+        "text": "shopify inc"
+      },
+      {
+        "intent": "provide_nth",
+        "text": "Month based prices"
+      },
+      {
+        "intent": "provide_hour",
+        "text": "Hour based prices"
+      },
+      {
+        "intent": "provide_month",
+        "text": "stock prices"
+      },
+      {
+        "intent": "provide_info",
+        "text": "Stock company details"
+      },
+      {
+        "intent": "provide_info",
+        "text": "I want to know the company details"
+      },
+      {
+        "intent": "provide_done",
+        "text": "No, that's it"
+      },
+      {
+        "intent": "provide_done",
+        "text": "No, thanks"
+      },
+      {
+        "intent": "provide_done",
+        "text": "No, that's all I wanted"
+      },
+      {
+        "intent": "provide_done",
+        "text": "No"
+      },
+      {
+        "intent": "provide_done",
+        "text": "Nope"
+      },
+      {
+        "intent": "provide_done",
+        "text": "That's all"
+      },
+      {
+        "intent": "provide_done",
+        "text": "No, thank you"
+      },
+      {
+        "intent": "provide_done",
+        "text": "No that's it"
+      }
+    ],
+    "regex_features": [],
+    "entity_synonyms": [
+      {
+        "value": "microsoft",
+        "synonyms": [
+          "Microsoft"
+        ]
+      },
+      {
+        "value": "shop",
+        "synonyms": [
+          "shopify inc"
+        ]
+      }
+    ]
+  }
+}

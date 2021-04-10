@@ -1,0 +1,25 @@
+{
+  "states": [
+    "intent_greet",
+    "intent_provide_current",
+    "intent_provide_done",
+    "intent_provide_hour",
+    "intent_provide_info",
+    "intent_provide_month",
+    "intent_provide_name",
+    "intent_provide_nth",
+    "entity_stock",
+    "slot_stock_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_action_default_fallback",
+    "prev_utter_greet",
+    "prev_utter_options",
+    "prev_utter_current",
+    "prev_utter_nth",
+    "prev_utter_hour",
+    "prev_utter_month",
+    "prev_utter_info",
+    "prev_utter_bye"
+  ]
+}
