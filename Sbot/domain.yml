@@ -8,7 +8,6 @@ intents:
   - provide_name
   - provide_nth
   - provide_hour
-  - provide_month
   - provide_info
   - provide_done
 
@@ -21,7 +20,6 @@ actions:
 - utter_current
 - utter_nth
 - utter_hour
-- utter_month
 - utter_info
 - utter_bye
 
@@ -30,7 +28,7 @@ templates:
   - text: "Hey there! Welcome to the Stock Info. Let me know the company's name to know it's stock info:)"
   
   utter_options:
-  - text: "You can select the below options to know the stock prices of Shopify Inc"
+  - text: "You can select the below options to know the stock prices of {stock}"
     buttons:
     - title: "Current stock prices"
       payload: '/provide_current'
@@ -40,11 +38,9 @@ templates:
       payload: '/provide_nth'
     - title: "Stock company details"
       payload: '/provide_info'
-    - title: " "
-      payload: '/provide_month'
  
   utter_current:
-  - text: "The closing stock price of Shopify Inc. is 1536.84 USD on 2021-04-08. You can always ask me more questions :)"
+  - text: "The closing stock price of {stock} is 1536.84 USD on 2021-04-08. You can always ask me more questions :)"
     buttons:
     - title: "Current stock prices"
       payload: '/provide_current'
@@ -54,11 +50,9 @@ templates:
       payload: '/provide_nth'
     - title: "Stock company details"
       payload: '/provide_info'
-    - title: " "
-      payload: '/provide_month'
 
   utter_nth:
-  - text: "The last 5 months stock price of Shopify Inc. were $1155.41, $1309.94, $1144.93, $1092.42 and $1069.06 in the month of April'21, March'21, February'21, January'21, December'20, respectively. I would love to answer more questions"
+  - text: "The last 5 months stock price of {stock}. were $1155.41, $1309.94, $1144.93, $1092.42 and $1069.06 in the month of April'21, March'21, February'21, January'21, December'20, respectively. I would love to answer more questions"
     buttons:
     - title: "Current stock prices"
       payload: '/provide_current'
@@ -68,12 +62,9 @@ templates:
       payload: '/provide_nth'
     - title: "Stock company details"
       payload: '/provide_info'
-    - title: " "
-      payload: '/provide_month'
- 
 
   utter_hour:
-  - text: "The last 5 hours stock price of Shopify Inc. were $1217.78, $1209.98, $1198.16, $1211.11 at 1:00pm, 12pm, 11pm, 10pm EST respectively. Keep on asking..."
+  - text: "The last 5 hours stock price of {stock} were $1217.78, $1209.98, $1198.16, $1211.11 at 1:00pm, 12pm, 11pm, 10pm EST respectively. Keep on asking..."
     buttons:
     - title: "Current stock prices"
       payload: '/provide_current'
@@ -83,25 +74,9 @@ templates:
       payload: '/provide_nth'
     - title: "Stock company details"
       payload: '/provide_info'
-    - title: " "
-      payload: '/provide_month'
-
-  utter_month:
-  - text: "The last 5 hours stock price of ibm were $1217.78, $1209.98, $1198.16, $1211.11 at 1:00pm, 12pm, 11pm, 10pm EST respectively. Keep on asking..."
-    buttons:
-    - title: "Current stock prices"
-      payload: '/provide_current'
-    - title: "Hour based prices"
-      payload: '/provide_hour'
-    - title: "Month based prices"
-      payload: '/provide_nth'
-    - title: "Stock company details"
-      payload: '/provide_info'
-    - title: " "
-      payload: '/provide_month'
-
+      
   utter_info:
-  - text: "Shopify Inc. is a Canadian multinational e-commerce company headquartered in Ottawa, Ontario. It is also the name of its proprietary e-commerce platform for online stores and retail point-of-sale systems. Keep on asking such questions, I would love to answer them"
+  - text: "{Stock} is a Canadian multinational e-commerce company headquartered in Ottawa, Ontario. It is also the name of its proprietary e-commerce platform for online stores and retail point-of-sale systems. Keep on asking such questions, I would love to answer them"
     buttons:
     - title: "Current stock prices"
       payload: '/provide_current'
