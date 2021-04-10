@@ -1,7 +1,7 @@
 ## story11
 * greet
   - utter_greet
-* provide_name{"stock":"ibm", "stock":"tesco", "stock":"microsoft", "stock":"shopify inc"}
+* provide_name{"stock":"ibm", "stock":"tesco", "stock":"microsoft", "stock":"shopify inc". "stock":"shopify"}
   - utter_options
 * provide_current
   - utter_current
